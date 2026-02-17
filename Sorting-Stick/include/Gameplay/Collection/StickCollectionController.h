@@ -11,6 +11,7 @@ namespace Gameplay
         class StickCollectionModel;
         struct Stick;
         enum class SortType;
+		enum class SortState;
 
         class StickCollectionController
         {
@@ -20,6 +21,7 @@ namespace Gameplay
 
             std::vector<Stick*> sticks;
             SortType sort_type;
+			SortState sort_state;
 
             std::thread sort_thread;
 
@@ -27,6 +29,7 @@ namespace Gameplay
             int number_of_array_access;
             int current_operation_delay;
 
+			int color_delay;
             int delay_in_ms;
             sf::String time_complexity;
 
@@ -44,6 +47,10 @@ namespace Gameplay
             void processSortThreadState();
 
             bool isCollectionSorted();
+
+			void setCompletedColor();
+			void processBubbleSort();
+
             void destroy();
 
         public:
