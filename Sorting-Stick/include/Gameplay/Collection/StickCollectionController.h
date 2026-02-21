@@ -49,10 +49,12 @@ namespace Gameplay
             bool isCollectionSorted();
 
 			void setCompletedColor();
+
 			void processBubbleSort();
             void processInsertionSort();
 			void processSelectionSort();
-
+			void processInPlaceMergeSort();
+			void inPlaceMerge(int left, int mid, int right);
             void destroy();
 
         public:
