@@ -49,7 +49,6 @@ namespace Gameplay
             bool isCollectionSorted();
 
 			void setCompletedColor();
-
 			void processBubbleSort();
             void processInsertionSort();
 			void processSelectionSort();
@@ -65,7 +64,6 @@ namespace Gameplay
 
             int partition(int left,int right);
             void quickSort(int left, int right);
-
 
             void destroy();
 
